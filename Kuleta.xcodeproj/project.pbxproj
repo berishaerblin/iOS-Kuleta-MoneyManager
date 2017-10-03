@@ -13,6 +13,14 @@
 		075F7CC71F83186200AEF32E /* Kuleta.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 075F7CC51F83186200AEF32E /* Kuleta.xcdatamodeld */; };
 		075F7CC91F83186200AEF32E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 075F7CC81F83186200AEF32E /* Assets.xcassets */; };
 		075F7CCC1F83186200AEF32E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 075F7CCA1F83186200AEF32E /* LaunchScreen.storyboard */; };
+		075F7CD51F8319DA00AEF32E /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 075F7CD31F8319DA00AEF32E /* Home.storyboard */; };
+		075F7CD71F8319F700AEF32E /* Goals.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 075F7CD61F8319F700AEF32E /* Goals.storyboard */; };
+		075F7CDA1F831A6D00AEF32E /* Balance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075F7CD91F831A6D00AEF32E /* Balance.swift */; };
+		075F7CDC1F831A7900AEF32E /* Borrowing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075F7CDB1F831A7900AEF32E /* Borrowing.swift */; };
+		075F7CDE1F831A9100AEF32E /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075F7CDD1F831A9100AEF32E /* Category.swift */; };
+		075F7CE01F831A9F00AEF32E /* Expense.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075F7CDF1F831A9F00AEF32E /* Expense.swift */; };
+		075F7CE21F831AA800AEF32E /* Income.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075F7CE11F831AA800AEF32E /* Income.swift */; };
+		075F7CE41F831AB500AEF32E /* Saving.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075F7CE31F831AB500AEF32E /* Saving.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +32,14 @@
 		075F7CC81F83186200AEF32E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		075F7CCB1F83186200AEF32E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		075F7CCD1F83186200AEF32E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		075F7CD41F8319DA00AEF32E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Kuleta/Base.lproj/Home.storyboard; sourceTree = "<group>"; };
+		075F7CD61F8319F700AEF32E /* Goals.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Goals.storyboard; sourceTree = "<group>"; };
+		075F7CD91F831A6D00AEF32E /* Balance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Balance.swift; sourceTree = "<group>"; };
+		075F7CDB1F831A7900AEF32E /* Borrowing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Borrowing.swift; sourceTree = "<group>"; };
+		075F7CDD1F831A9100AEF32E /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		075F7CDF1F831A9F00AEF32E /* Expense.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expense.swift; sourceTree = "<group>"; };
+		075F7CE11F831AA800AEF32E /* Income.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Income.swift; sourceTree = "<group>"; };
+		075F7CE31F831AB500AEF32E /* Saving.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Saving.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,12 +75,44 @@
 				075F7CBE1F83186200AEF32E /* AppDelegate.swift */,
 				075F7CC01F83186200AEF32E /* ViewController.swift */,
 				075F7CC21F83186200AEF32E /* Main.storyboard */,
+				075F7CE51F831AEB00AEF32E /* Home */,
+				075F7CE61F831AFE00AEF32E /* Goals */,
+				075F7CD81F831A5100AEF32E /* Database */,
 				075F7CC81F83186200AEF32E /* Assets.xcassets */,
 				075F7CCA1F83186200AEF32E /* LaunchScreen.storyboard */,
 				075F7CCD1F83186200AEF32E /* Info.plist */,
-				075F7CC51F83186200AEF32E /* Kuleta.xcdatamodeld */,
 			);
 			path = Kuleta;
+			sourceTree = "<group>";
+		};
+		075F7CD81F831A5100AEF32E /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				075F7CC51F83186200AEF32E /* Kuleta.xcdatamodeld */,
+				075F7CD91F831A6D00AEF32E /* Balance.swift */,
+				075F7CDB1F831A7900AEF32E /* Borrowing.swift */,
+				075F7CDD1F831A9100AEF32E /* Category.swift */,
+				075F7CDF1F831A9F00AEF32E /* Expense.swift */,
+				075F7CE11F831AA800AEF32E /* Income.swift */,
+				075F7CE31F831AB500AEF32E /* Saving.swift */,
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
+		075F7CE51F831AEB00AEF32E /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				075F7CD31F8319DA00AEF32E /* Home.storyboard */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		075F7CE61F831AFE00AEF32E /* Goals */ = {
+			isa = PBXGroup;
+			children = (
+				075F7CD61F8319F700AEF32E /* Goals.storyboard */,
+			);
+			path = Goals;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,9 +174,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				075F7CD71F8319F700AEF32E /* Goals.storyboard in Resources */,
 				075F7CCC1F83186200AEF32E /* LaunchScreen.storyboard in Resources */,
 				075F7CC91F83186200AEF32E /* Assets.xcassets in Resources */,
 				075F7CC41F83186200AEF32E /* Main.storyboard in Resources */,
+				075F7CD51F8319DA00AEF32E /* Home.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,9 +189,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				075F7CE41F831AB500AEF32E /* Saving.swift in Sources */,
+				075F7CE01F831A9F00AEF32E /* Expense.swift in Sources */,
 				075F7CC11F83186200AEF32E /* ViewController.swift in Sources */,
+				075F7CE21F831AA800AEF32E /* Income.swift in Sources */,
 				075F7CBF1F83186200AEF32E /* AppDelegate.swift in Sources */,
+				075F7CDC1F831A7900AEF32E /* Borrowing.swift in Sources */,
+				075F7CDA1F831A6D00AEF32E /* Balance.swift in Sources */,
 				075F7CC71F83186200AEF32E /* Kuleta.xcdatamodeld in Sources */,
+				075F7CDE1F831A9100AEF32E /* Category.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -162,6 +218,14 @@
 				075F7CCB1F83186200AEF32E /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		075F7CD31F8319DA00AEF32E /* Home.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				075F7CD41F8319DA00AEF32E /* Base */,
+			);
+			name = Home.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -281,6 +345,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CG7B5K87R2;
 				INFOPLIST_FILE = Kuleta/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.berishaerblin.Kuleta;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -296,6 +361,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CG7B5K87R2;
 				INFOPLIST_FILE = Kuleta/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.berishaerblin.Kuleta;
 				PRODUCT_NAME = "$(TARGET_NAME)";
