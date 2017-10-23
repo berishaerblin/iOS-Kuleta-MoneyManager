@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0747CE701F9BCD0E004E502E /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0747CE6E1F9BCD0E004E502E /* HomeTableViewCell.swift */; };
+		0747CE711F9BCD0E004E502E /* HomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0747CE6F1F9BCD0E004E502E /* HomeTableViewCell.xib */; };
 		075F7CBF1F83186200AEF32E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075F7CBE1F83186200AEF32E /* AppDelegate.swift */; };
 		075F7CC11F83186200AEF32E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075F7CC01F83186200AEF32E /* ViewController.swift */; };
 		075F7CC41F83186200AEF32E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 075F7CC21F83186200AEF32E /* Main.storyboard */; };
@@ -21,9 +23,15 @@
 		075F7CE01F831A9F00AEF32E /* Expense.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075F7CDF1F831A9F00AEF32E /* Expense.swift */; };
 		075F7CE21F831AA800AEF32E /* Income.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075F7CE11F831AA800AEF32E /* Income.swift */; };
 		075F7CE41F831AB500AEF32E /* Saving.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075F7CE31F831AB500AEF32E /* Saving.swift */; };
+		0771141E1F9BC2FC0018A277 /* Transaction.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0771141C1F9BC2FC0018A277 /* Transaction.storyboard */; };
+		0786D74A1F8404B900DCFD4B /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0786D7491F8404B900DCFD4B /* HomeViewController.swift */; };
+		078DC3851F95049A0019A11F /* TransactionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 078DC3841F95049A0019A11F /* TransactionType.swift */; };
+		07F634161F9E499E00FF4439 /* AddTransactionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F634151F9E499E00FF4439 /* AddTransactionTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0747CE6E1F9BCD0E004E502E /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
+		0747CE6F1F9BCD0E004E502E /* HomeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeTableViewCell.xib; sourceTree = "<group>"; };
 		075F7CBB1F83186200AEF32E /* Kuleta.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kuleta.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		075F7CBE1F83186200AEF32E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		075F7CC01F83186200AEF32E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -40,6 +48,10 @@
 		075F7CDF1F831A9F00AEF32E /* Expense.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expense.swift; sourceTree = "<group>"; };
 		075F7CE11F831AA800AEF32E /* Income.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Income.swift; sourceTree = "<group>"; };
 		075F7CE31F831AB500AEF32E /* Saving.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Saving.swift; sourceTree = "<group>"; };
+		0771141D1F9BC2FC0018A277 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Kuleta/Home/Kuleta/Base.lproj/Transaction.storyboard; sourceTree = "<group>"; };
+		0786D7491F8404B900DCFD4B /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		078DC3841F95049A0019A11F /* TransactionType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionType.swift; sourceTree = "<group>"; };
+		07F634151F9E499E00FF4439 /* AddTransactionTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTransactionTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,7 +88,9 @@
 				075F7CC01F83186200AEF32E /* ViewController.swift */,
 				075F7CC21F83186200AEF32E /* Main.storyboard */,
 				075F7CE51F831AEB00AEF32E /* Home */,
+				0786D74B1F840ABC00DCFD4B /* Transactions */,
 				075F7CE61F831AFE00AEF32E /* Goals */,
+				07F634171F9E519000FF4439 /* Cells */,
 				075F7CD81F831A5100AEF32E /* Database */,
 				075F7CC81F83186200AEF32E /* Assets.xcassets */,
 				075F7CCA1F83186200AEF32E /* LaunchScreen.storyboard */,
@@ -103,6 +117,7 @@
 			isa = PBXGroup;
 			children = (
 				075F7CD31F8319DA00AEF32E /* Home.storyboard */,
+				0786D7491F8404B900DCFD4B /* HomeViewController.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -113,6 +128,25 @@
 				075F7CD61F8319F700AEF32E /* Goals.storyboard */,
 			);
 			path = Goals;
+			sourceTree = "<group>";
+		};
+		0786D74B1F840ABC00DCFD4B /* Transactions */ = {
+			isa = PBXGroup;
+			children = (
+				0771141C1F9BC2FC0018A277 /* Transaction.storyboard */,
+				078DC3841F95049A0019A11F /* TransactionType.swift */,
+				07F634151F9E499E00FF4439 /* AddTransactionTableViewController.swift */,
+			);
+			path = Transactions;
+			sourceTree = "<group>";
+		};
+		07F634171F9E519000FF4439 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				0747CE6E1F9BCD0E004E502E /* HomeTableViewCell.swift */,
+				0747CE6F1F9BCD0E004E502E /* HomeTableViewCell.xib */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -175,10 +209,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				075F7CD71F8319F700AEF32E /* Goals.storyboard in Resources */,
+				0747CE711F9BCD0E004E502E /* HomeTableViewCell.xib in Resources */,
 				075F7CCC1F83186200AEF32E /* LaunchScreen.storyboard in Resources */,
 				075F7CC91F83186200AEF32E /* Assets.xcassets in Resources */,
 				075F7CC41F83186200AEF32E /* Main.storyboard in Resources */,
 				075F7CD51F8319DA00AEF32E /* Home.storyboard in Resources */,
+				0771141E1F9BC2FC0018A277 /* Transaction.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -191,9 +227,13 @@
 			files = (
 				075F7CE41F831AB500AEF32E /* Saving.swift in Sources */,
 				075F7CE01F831A9F00AEF32E /* Expense.swift in Sources */,
+				0747CE701F9BCD0E004E502E /* HomeTableViewCell.swift in Sources */,
 				075F7CC11F83186200AEF32E /* ViewController.swift in Sources */,
+				078DC3851F95049A0019A11F /* TransactionType.swift in Sources */,
 				075F7CE21F831AA800AEF32E /* Income.swift in Sources */,
 				075F7CBF1F83186200AEF32E /* AppDelegate.swift in Sources */,
+				07F634161F9E499E00FF4439 /* AddTransactionTableViewController.swift in Sources */,
+				0786D74A1F8404B900DCFD4B /* HomeViewController.swift in Sources */,
 				075F7CDC1F831A7900AEF32E /* Borrowing.swift in Sources */,
 				075F7CDA1F831A6D00AEF32E /* Balance.swift in Sources */,
 				075F7CC71F83186200AEF32E /* Kuleta.xcdatamodeld in Sources */,
@@ -226,6 +266,14 @@
 				075F7CD41F8319DA00AEF32E /* Base */,
 			);
 			name = Home.storyboard;
+			sourceTree = "<group>";
+		};
+		0771141C1F9BC2FC0018A277 /* Transaction.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0771141D1F9BC2FC0018A277 /* Base */,
+			);
+			name = Transaction.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
